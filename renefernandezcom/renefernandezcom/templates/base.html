@@ -1,0 +1,120 @@
+{% load staticfiles %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="author" content="René Fernández Sánchez">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <!--<link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">-->
+    <link href="{% static 'css/carousel.css' %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}" title="Inicio">René Fernández Sánchez</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!--<li class="active"><a href="#">Acerca de</a></li>
+                <li><a href="#">Contact</a></li>-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Curriculum <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% static 'curriculums/rene_fernandez_curriculum_en_304.pdf' %}" title="René F. Sánchez Currículum (en) PDF">In english</a>
+                        </li>
+                        <li><a href="{% static 'curriculums/rene_fernandez_curriculum_es_304.pdf' %}" title="René F. Sánchez Currículum (es) PDF">En español</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form action="{% url 'set_language' %}" method="post" class=" navbar-form navbar-right">
+                <div class="form-group">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                    <input type="hidden" name="language" value="es"/>
+                    <button type="submit" class="btn btn-default">es</button>
+                </div>
+            </form>
+            <form action="{% url 'set_language' %}" method="post" class=" navbar-form navbar-right">
+                <div class="form-group">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                    <input type="hidden" name="language" value="en"/>
+                    <button type="submit" class="btn btn-default">en</button>
+                </div>
+            </form>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+{% block content %}{% endblock %}
+
+<!-- /END THE FEATURETTES -->
+
+
+<!-- FOOTER -->
+<footer>
+    <p class="pull-right"><a href="#">{% trans "Volver arriba" %}</a></p>
+
+    <p>&copy; 2014 René F. Sánchez <!-- &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>--></p>
+</footer>
+
+</div><!-- /.container -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30001389-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+</script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/holder.js' %}"></script>
+
+{% block footer %}{% endblock %}
+
+</body>
+</html>

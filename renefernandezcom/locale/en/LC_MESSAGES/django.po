@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-25 22:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: renefernandezcom/templates/base.html:89
+msgid "Volver arriba"
+msgstr "Back to top"
+
+#: renefernandezcom/templates/home.html:25
+msgid "Entrada del Centro Niemeyer"
+msgstr "Niemeyer Centre"
+
+#: renefernandezcom/templates/home.html:33
+msgid "Pueblo al atardecer."
+msgstr "Town at sundown"
+
+#: renefernandezcom/templates/home.html:40
+msgid "Londres (Reino Unido)"
+msgstr "London (United Kingdom)"
+
+#: renefernandezcom/templates/home.html:41
+msgid "Westminster y el Big Ben"
+msgstr "Westminster and the Big Ben"
+
+#: renefernandezcom/templates/home.html:49
+msgid "Cerca de Valle de Lago"
+msgstr "Near Valle de Lago"
+
+#: renefernandezcom/templates/home.html:56
+msgid "Nueva York (EEUU)"
+msgstr "New York (USA)"
+
+#: renefernandezcom/templates/home.html:57
+msgid "Empire State Building y downtown"
+msgstr "Empire State Building and downtown"
+
+#: renefernandezcom/templates/home.html:75
+msgid "Bienvenido a mi página web personal. "
+msgstr "Welcome to my personal site."
+
+#: renefernandezcom/templates/home.html:76
+msgid ""
+"Me llamo René Fernández y soy Ingeniero Técnico Informático. En esta página "
+"encontrarás información sobre mi actividad profesional y personal."
+msgstr ""
+"My name is René Fernández and I am a Techcnical Computer Engineer. In this "
+"site you can find som information about my professional and personal "
+"activity."
+
+#: renefernandezcom/templates/home.html:118
+msgid "¿A qué me dedico?"
+msgstr "About me. "
+
+#: renefernandezcom/templates/home.html:118
+msgid "En corto."
+msgstr "In short."
+
+#: renefernandezcom/templates/home.html:119
+msgid ""
+"Actualmente estoy estudiando el Máster de Ingeniería Web de la Universidad "
+"de Oviedo <span class=\"eii-mini\"></span>."
+msgstr ""
+"Currently I am doing the Master's Degree in Web Engineering of the "
+"University of Oviedo <span class=\"eii-mini\"></span>."
+
+#: renefernandezcom/templates/home.html:120
+msgid ""
+"En mi tiempo libre suelo salir a hacer fotos <span class=\"camera-mini\"></"
+"span>, aunque también me gusta programar <span class=\"code-mini\"></span>, "
+"jugar a la consola <span class=\"pad-mini\"></span>, escribir en mi blog "
+"<span class=\"wp-mini\"></span> y salir a caminar <span class=\"sneaker-mini"
+"\"></span> cuando el tiempo acompaña."
+msgstr ""
+"On my free time I usually go out to take pictures <span class=\"camera-mini"
+"\"></span>, but I also like programming <span class=\"code-mini\"></span>, "
+"playing video games <span class=\"pad-mini\"></span>, writing on my blog "
+"<span class=\"wp-mini\"></span> and go for a walk <span class=\"sneaker-mini"
+"\"></span> when the weather is good."
+
+#: renefernandezcom/templates/home.html:124
+msgid "trans_tweets"
+msgstr "TWEETS IN ENGLISH"
+
+#: renefernandezcom/templates/home.html:160
+msgid "Social."
+msgstr "Social."
+
+#: renefernandezcom/templates/home.html:161
+msgid ""
+"También puedes encontrarme en las redes sociales. Tengo una cuenta en casi "
+"todas las que existen, así que he tenido el detalle de poner a continuación "
+"solamente aquellas que creo que te pueden interesar más."
+msgstr ""
+"You can also find me on several social networks. I have an account in almost "
+"everyone! These are some of them."
+
+#~ msgid "Tweets por @the_rocker"
+#~ msgstr "Tweets by @the_rocker"
