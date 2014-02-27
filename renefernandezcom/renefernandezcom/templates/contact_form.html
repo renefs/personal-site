@@ -1,8 +1,5 @@
 {% load staticfiles %}
 {% load i18n %}
-{% if form.success %}
-    <p class="bg-success form-success">{{ form.success }}</p>
-{% endif %}
 
 <div class="form-group {% if form.name.errors %} has-error {% endif %}">
 <label for="id_name" class="control-label">{% trans "Nombre" %}</label>

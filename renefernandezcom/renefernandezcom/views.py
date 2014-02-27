@@ -5,9 +5,10 @@ from django.shortcuts import render
 
 from django.utils.translation import ugettext as _
 
-from django.core.mail import send_mail
+from django.contrib import messages
 from django.core.mail import EmailMessage
 from renefernandezcom.forms import ContactForm
+
 
 def home(request):
     form = contact(request)
@@ -29,7 +30,7 @@ def contact(request):
             #msg.send()
 
             new_form = ContactForm()
-            new_form.success = _(u'El mensaje ha sido enviado correctamente. ¡Gracias!')
+            messages.add_message(request, messages.SUCCESS,  _(u'El mensaje ha sido enviado correctamente. ¡Gracias!'))
 
             return new_form
     else:
