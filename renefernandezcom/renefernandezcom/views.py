@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 __author__ = 'rene'
-
+from renefernandezcom.settings import DEFAULT_FROM_EMAIL
 from django.shortcuts import render
 
 from django.utils.translation import ugettext as _
 
 from django.core.mail import send_mail
+from django.core.mail import EmailMessage
 from renefernandezcom.forms import ContactForm
 
 def home(request):
@@ -19,15 +20,16 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            send_mail(
-                '[Página personal] Formulario de contacto',
-                cd['message'],
-                cd.get('email', 'noreply@example.com'),
-                ['hola@renefernandez.com'],
-            )
+
+            html_content = '<p>Hola, soy <strong>' + cd['name'] + '</strong><p><strong>Email del remitente</strong>' + \
+                           cd['email'] + '</p><p><strong>Cuerpo:</strong></p>' + cd['message'] + '</p>'
+
+            msg = EmailMessage('[Página personal] Formulario de contacto', html_content, DEFAULT_FROM_EMAIL,[DEFAULT_FROM_EMAIL])
+            msg.content_subtype = "html"  # Main content is now text/html
+            #msg.send()
 
             new_form = ContactForm()
-            new_form.success = _('El mensaje ha sido enviado correctamente. ¡Gracias!')
+            new_form.success = _(u'El mensaje ha sido enviado correctamente. ¡Gracias!')
 
             return new_form
     else:
