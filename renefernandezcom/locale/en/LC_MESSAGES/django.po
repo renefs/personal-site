@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-25 22:28+0100\n"
+"POT-Creation-Date: 2014-02-27 21:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: renefernandezcom/templates/base.html:89
+#: renefernandezcom/views.py:30
+msgid "El mensaje ha sido enviado correctamente. ¡Gracias!"
+msgstr "Message was sent successfully. Thanks!"
+
+#: renefernandezcom/templates/base.html:59
+msgid "Contacto"
+msgstr "Contact"
+
+#: renefernandezcom/templates/base.html:90
 msgid "Volver arriba"
 msgstr "Back to top"
+
+#: renefernandezcom/templates/contact_form.html:8
+msgid "Nombre"
+msgstr "Name"
+
+#: renefernandezcom/templates/contact_form.html:19
+msgid "Email"
+msgstr "Email"
+
+#: renefernandezcom/templates/contact_form.html:30
+msgid "Mensaje"
+msgstr "Message"
+
+#: renefernandezcom/templates/contact_form.html:41
+msgid "Realiza esta operación: "
+msgstr "Do this math: "
 
 #: renefernandezcom/templates/home.html:25
 msgid "Entrada del Centro Niemeyer"
@@ -94,13 +118,34 @@ msgstr ""
 
 #: renefernandezcom/templates/home.html:124
 msgid "trans_tweets"
-msgstr "TWEETS IN ENGLISH"
+msgstr "Tweets"
 
-#: renefernandezcom/templates/home.html:160
+#: renefernandezcom/templates/home.html:133
+msgid "¿Quieres ponerte en contacto conmigo?"
+msgstr "Do you want to contact me?"
+
+#: renefernandezcom/templates/home.html:133
+msgid "Usa el formulario."
+msgstr "Use this form."
+
+#: renefernandezcom/templates/home.html:134
+msgid ""
+"Si quieres ponerte en contacto conmigo puedes utilizar el formulario de "
+"contacto de la izquierda. Si lo prefieres, también puedes hacerlo utilizando "
+"alguna de las redes sociales de más abajo."
+msgstr ""
+"If you want to contact me you can use the contact form on the left. If you "
+"prefer, you can also do it using any of the social networks below."
+
+#: renefernandezcom/templates/home.html:145
+msgid "Enviar"
+msgstr "Send"
+
+#: renefernandezcom/templates/home.html:155
 msgid "Social."
 msgstr "Social."
 
-#: renefernandezcom/templates/home.html:161
+#: renefernandezcom/templates/home.html:156
 msgid ""
 "También puedes encontrarme en las redes sociales. Tengo una cuenta en casi "
 "todas las que existen, así que he tenido el detalle de poner a continuación "

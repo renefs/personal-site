@@ -1,0 +1,50 @@
+{% load staticfiles %}
+{% load i18n %}
+{% if form.success %}
+    <p class="bg-success form-success">{{ form.success }}</p>
+{% endif %}
+
+<div class="form-group {% if form.name.errors %} has-error {% endif %}">
+<label for="id_name" class="control-label">{% trans "Nombre" %}</label>
+  {{ form.name }}
+  {% if form.name.errors %}
+        <ul class="bg-danger">
+        {% for error in form.name.errors %}
+            <li>{{ error|escape }}</li>
+        {% endfor %}
+        </ul>
+  {% endif %}
+</div>
+<div class="form-group {% if form.email.errors %} has-error {% endif %}">
+<label for="id_email" class="control-label">{% trans "Email" %}</label>
+  {{ form.email }}
+  {% if form.email.errors %}
+        <ul class="bg-danger">
+        {% for error in form.email.errors %}
+            <li>{{ error|escape }}</li>
+        {% endfor %}
+        </ul>
+  {% endif %}
+</div>
+<div class="form-group {% if form.message.errors %} has-error {% endif %}">
+<label for="id_message" class="control-label">{% trans "Mensaje" %}</label>
+  {{ form.message }}
+  {% if form.message.errors %}
+        <ul class="bg-danger">
+        {% for error in form.message.errors %}
+            <li>{{ error|escape }}</li>
+        {% endfor %}
+        </ul>
+  {% endif %}
+</div>
+<div class="form-group {% if form.captcha.errors %} has-error {% endif %}">
+<label for="id_captcha" class="control-label">{% trans "Realiza esta operación: " %}</label>
+  {{ form.captcha }}
+  {% if form.message.errors %}
+        <ul class="bg-danger">
+        {% for error in form.message.errors %}
+            <li>{{ error|escape }}</li>
+        {% endfor %}
+        </ul>
+  {% endif %}
+</div>

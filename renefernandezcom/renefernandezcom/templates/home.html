@@ -4,7 +4,7 @@
 
 {% block title %}René Fernández Sánchez - Página personal{% endblock %}
 
-{% block meta_description %}Página persona de René Fernández. Asturiano, Ingeniero Técnico Informático y desarollador web e iOS{% endblock %}
+{% block meta_description %}Página personal de René Fernández. Asturiano, Ingeniero Técnico Informático y desarollador web e iOS{% endblock %}
 
 {% block content %}
     <!-- Carousel
@@ -126,32 +126,27 @@
         </div>
       </div>
 
-      <!--<hr class="featurette-divider">
+      <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="contact-form-section">
+        <div class="col-md-7 pull-right contact-header">
+          <h2 class="featurette-heading">{% blocktrans %}¿Quieres ponerte en contacto conmigo?{% endblocktrans %}<span class="text-muted">{% trans "Usa el formulario." %}</span></h2>
+          <p class="lead">{% blocktrans %}Si quieres ponerte en contacto conmigo puedes utilizar el formulario de contacto de la izquierda. Si lo prefieres, también puedes hacerlo utilizando alguna de las redes sociales de más abajo.{% endblocktrans %}</p>
+        </div>
+
         <div class="col-md-5">
-          <form role="form">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Name</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" class="form-control" rows="3"></textarea>
-              </div>
 
-              <button type="submit" class="btn btn-default">Submit</button>
+          <form role="form" action="" method="post">
+
+              {% include "contact_form.html" with form=form %}
+
+              {% csrf_token %}
+
+              <button type="submit" class="btn btn-default">{% trans "Enviar" %}</button>
             </form>
         </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">¿Quieres ponerte en contacto conmigo?<span class="text-muted">Usa el formulario.</span></h2>
-          <p class="lead">Si quieres ponerte en contacto conmigo puedes utilizar el formulario de contacto de la izquierda. Si lo prefieres, también puedes hacerlo utilizando alguna de las redes sociales de más abajo.</p>
-        </div>
-      </div>-->
+
+      </div>
 
       <hr class="featurette-divider">
 
