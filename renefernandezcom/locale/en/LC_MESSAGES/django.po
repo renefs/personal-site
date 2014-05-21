@@ -3,45 +3,45 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-27 21:13+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-05-21 11:50+0200\n"
+"PO-Revision-Date: 2014-05-21 11:50+0100\n"
+"Last-Translator: Rene Fernandez <renefs87@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
 
-#: renefernandezcom/views.py:30
+#: renefernandezcom/views.py:33
 msgid "El mensaje ha sido enviado correctamente. ¡Gracias!"
 msgstr "Message was sent successfully. Thanks!"
 
-#: renefernandezcom/templates/base.html:59
+#: renefernandezcom/templates/base.html:60
 msgid "Contacto"
 msgstr "Contact"
 
-#: renefernandezcom/templates/base.html:90
+#: renefernandezcom/templates/base.html:91
 msgid "Volver arriba"
 msgstr "Back to top"
 
-#: renefernandezcom/templates/contact_form.html:8
+#: renefernandezcom/templates/contact_form.html:5
 msgid "Nombre"
 msgstr "Name"
 
-#: renefernandezcom/templates/contact_form.html:19
+#: renefernandezcom/templates/contact_form.html:16
 msgid "Email"
 msgstr "Email"
 
-#: renefernandezcom/templates/contact_form.html:30
+#: renefernandezcom/templates/contact_form.html:27
 msgid "Mensaje"
 msgstr "Message"
 
-#: renefernandezcom/templates/contact_form.html:41
+#: renefernandezcom/templates/contact_form.html:38
 msgid "Realiza esta operación: "
 msgstr "Do this math: "
 
@@ -73,36 +73,42 @@ msgstr "New York (USA)"
 msgid "Empire State Building y downtown"
 msgstr "Empire State Building and downtown"
 
-#: renefernandezcom/templates/home.html:75
+#: renefernandezcom/templates/home.html:86
 msgid "Bienvenido a mi página web personal. "
 msgstr "Welcome to my personal site."
 
-#: renefernandezcom/templates/home.html:76
+#: renefernandezcom/templates/home.html:87
+#, fuzzy
 msgid ""
-"Me llamo René Fernández y soy Ingeniero Técnico Informático. En esta página "
-"encontrarás información sobre mi actividad profesional y personal."
+"Me llamo <span itemprop=\"name\">René Fernández</span> y soy un <span "
+"itemprop=\"jobtitle\">Ingeniero Técnico Informático</span> de <span itemprop="
+"\"addressRegion\">Asturias</span>. En esta página encontrarás información "
+"sobre mi actividad profesional y personal."
 msgstr ""
-"My name is René Fernández and I am a Techcnical Computer Engineer. In this "
-"site you can find som information about my professional and personal "
-"activity."
+"My name is <span itemprop=\"name\">René Fernández</span> and I am a <span "
+"itemprop=\"jobtitle\">Techcnical Computer Engineer</span> from <span "
+"itemprop=\"addressRegion\">Asturias</span>. In this site you can find som "
+"information about my professional and personal activity."
 
-#: renefernandezcom/templates/home.html:118
+#: renefernandezcom/templates/home.html:129
 msgid "¿A qué me dedico?"
 msgstr "About me. "
 
-#: renefernandezcom/templates/home.html:118
+#: renefernandezcom/templates/home.html:129
 msgid "En corto."
 msgstr "In short."
 
-#: renefernandezcom/templates/home.html:119
+#: renefernandezcom/templates/home.html:130
 msgid ""
-"Actualmente estoy estudiando el Máster de Ingeniería Web de la Universidad "
-"de Oviedo <span class=\"eii-mini\"></span>."
+"Actualmente estoy estudiando el Máster de Ingeniería Web de la <span "
+"itemprop=\"alumniOf\">Universidad de Oviedo</span> <span class=\"eii-mini"
+"\"></span>."
 msgstr ""
-"Currently I am doing the Master's Degree in Web Engineering of the "
-"University of Oviedo <span class=\"eii-mini\"></span>."
+"Currently I am doing the Master's Degree in Web Engineering of the <span "
+"itemprop=\"alumniOf\">University of Oviedo</span> <span class=\"eii-mini\"></"
+"span>."
 
-#: renefernandezcom/templates/home.html:120
+#: renefernandezcom/templates/home.html:131
 msgid ""
 "En mi tiempo libre suelo salir a hacer fotos <span class=\"camera-mini\"></"
 "span>, aunque también me gusta programar <span class=\"code-mini\"></span>, "
@@ -116,19 +122,19 @@ msgstr ""
 "<span class=\"wp-mini\"></span> and go for a walk <span class=\"sneaker-mini"
 "\"></span> when the weather is good."
 
-#: renefernandezcom/templates/home.html:124
+#: renefernandezcom/templates/home.html:135
 msgid "trans_tweets"
 msgstr "Tweets"
 
-#: renefernandezcom/templates/home.html:133
+#: renefernandezcom/templates/home.html:144
 msgid "¿Quieres ponerte en contacto conmigo?"
 msgstr "Do you want to contact me?"
 
-#: renefernandezcom/templates/home.html:133
+#: renefernandezcom/templates/home.html:144
 msgid "Usa el formulario."
 msgstr "Use this form."
 
-#: renefernandezcom/templates/home.html:134
+#: renefernandezcom/templates/home.html:145
 msgid ""
 "Si quieres ponerte en contacto conmigo puedes utilizar el formulario de "
 "contacto de la izquierda. Si lo prefieres, también puedes hacerlo utilizando "
@@ -137,15 +143,15 @@ msgstr ""
 "If you want to contact me you can use the contact form on the left. If you "
 "prefer, you can also do it using any of the social networks below."
 
-#: renefernandezcom/templates/home.html:145
+#: renefernandezcom/templates/home.html:156
 msgid "Enviar"
 msgstr "Send"
 
-#: renefernandezcom/templates/home.html:155
+#: renefernandezcom/templates/home.html:166
 msgid "Social."
 msgstr "Social."
 
-#: renefernandezcom/templates/home.html:156
+#: renefernandezcom/templates/home.html:167
 msgid ""
 "También puedes encontrarme en las redes sociales. Tengo una cuenta en casi "
 "todas las que existen, así que he tenido el detalle de poner a continuación "
