@@ -96,6 +96,12 @@ body {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+@media (max-width: 768px) {
+    .who-i-am{
+        width:100%;
+    }
+}
+
 
 @media (min-width: 768px) {
 
