@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-22 23:55+0200\n"
-"PO-Revision-Date: 2014-05-22 23:57+0100\n"
+"POT-Creation-Date: 2014-05-23 00:43+0200\n"
+"PO-Revision-Date: 2014-05-23 00:43+0100\n"
 "Last-Translator: Rene Fernandez <renefs87@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -44,39 +44,39 @@ msgstr "Message"
 msgid "Realiza esta operación: "
 msgstr "Do this math: "
 
-#: renefernandezcom/templates/home.html:29
+#: renefernandezcom/templates/home.html:30
 msgid "Entrada del Centro Niemeyer"
 msgstr "Niemeyer Centre"
 
-#: renefernandezcom/templates/home.html:37
+#: renefernandezcom/templates/home.html:38
 msgid "Pueblo al atardecer."
 msgstr "Town at sundown"
 
-#: renefernandezcom/templates/home.html:44
+#: renefernandezcom/templates/home.html:45
 msgid "Londres (Reino Unido)"
 msgstr "London (United Kingdom)"
 
-#: renefernandezcom/templates/home.html:45
+#: renefernandezcom/templates/home.html:46
 msgid "Westminster y el Big Ben"
 msgstr "Westminster and the Big Ben"
 
-#: renefernandezcom/templates/home.html:53
+#: renefernandezcom/templates/home.html:54
 msgid "Cerca de Valle de Lago"
 msgstr "Near Valle de Lago"
 
-#: renefernandezcom/templates/home.html:60
+#: renefernandezcom/templates/home.html:61
 msgid "Nueva York (EEUU)"
 msgstr "New York (USA)"
 
-#: renefernandezcom/templates/home.html:61
+#: renefernandezcom/templates/home.html:62
 msgid "Empire State Building y downtown"
 msgstr "Empire State Building and downtown"
 
-#: renefernandezcom/templates/home.html:87
+#: renefernandezcom/templates/home.html:92
 msgid "Bienvenido a mi página web personal. "
 msgstr "Welcome to my personal site."
 
-#: renefernandezcom/templates/home.html:88
+#: renefernandezcom/templates/home.html:94
 msgid ""
 "Me llamo <span itemprop=\"name\">René Fernández</span> y soy un <span "
 "itemprop=\"jobtitle\">Ingeniero Técnico Informático</span> de <span itemprop="
@@ -89,51 +89,53 @@ msgstr ""
 "itemprop=\"addressRegion\">Asturias</span>. In this site you can find some "
 "information about my professional and personal activity."
 
-#: renefernandezcom/templates/home.html:131
+#: renefernandezcom/templates/home.html:138
 msgid "¿A qué me dedico?"
 msgstr "About me. "
 
-#: renefernandezcom/templates/home.html:131
+#: renefernandezcom/templates/home.html:139
 msgid "En corto."
 msgstr "In short."
 
-#: renefernandezcom/templates/home.html:132
+#: renefernandezcom/templates/home.html:141
 msgid ""
 "Actualmente estoy estudiando el Máster de Ingeniería Web de la <span "
-"itemprop=\"alumniOf\">Universidad de Oviedo</span> <span class=\"eii-mini"
-"\"></span>."
+"itemprop=\"alumniOf\">Universidad de Oviedo</span> <span class=\"eii-mini "
+"hidden-xs\"></span>."
 msgstr ""
 "Currently I am doing the Master's Degree in Web Engineering of the <span "
-"itemprop=\"alumniOf\">University of Oviedo</span> <span class=\"eii-mini\"></"
-"span>."
+"itemprop=\"alumniOf\">University of Oviedo</span> <span class=\"eii-mini "
+"hidden-xs\"></span>."
 
-#: renefernandezcom/templates/home.html:133
+#: renefernandezcom/templates/home.html:143
 msgid ""
-"En mi tiempo libre suelo salir a hacer fotos <span class=\"camera-mini\"></"
-"span>, aunque también me gusta programar <span class=\"code-mini\"></span>, "
-"jugar a la consola <span class=\"pad-mini\"></span>, escribir en mi blog "
-"<span class=\"wp-mini\"></span> y salir a caminar <span class=\"sneaker-mini"
-"\"></span> cuando el tiempo acompaña."
+"En mi tiempo libre suelo salir a hacer fotos <span class=\"camera-mini "
+"hidden-xs\"></span>, aunque también me gusta programar <span class=\"code-"
+"mini hidden-xs\"></span>, jugar a la consola <span class=\"pad-mini hidden-xs"
+"\"></span>, escribir en mi blog <span class=\"wp-mini hidden-xs\"></span> y "
+"salir a caminar <span class=\"sneaker-mini hidden-xs\"></span> cuando el "
+"tiempo acompaña."
 msgstr ""
-"On my free time I usually go out to take pictures <span class=\"camera-mini"
-"\"></span>, but I also like programming <span class=\"code-mini\"></span>, "
-"playing video games <span class=\"pad-mini\"></span>, writing on my blog "
-"<span class=\"wp-mini\"></span> and go for a walk <span class=\"sneaker-mini"
-"\"></span> when the weather is good."
+"On my free time I usually go out to take pictures <span class=\"camera-mini "
+"hidden-xs\"></span>, but I also like programming <span class=\"code-mini "
+"hidden-xs\"></span>, playing video games <span class=\"pad-mini hidden-xs"
+"\"></span>, writing on my blog <span class=\"wp-mini hidden-xs\"></span> and "
+"go for a walk <span class=\"sneaker-mini hidden-xs\"></span> when the "
+"weather is good."
 
-#: renefernandezcom/templates/home.html:137
+#: renefernandezcom/templates/home.html:148
 msgid "trans_tweets"
 msgstr "Tweets"
 
-#: renefernandezcom/templates/home.html:146
+#: renefernandezcom/templates/home.html:157
 msgid "¿Quieres ponerte en contacto conmigo?"
 msgstr "Do you want to contact me?"
 
-#: renefernandezcom/templates/home.html:146
+#: renefernandezcom/templates/home.html:158
 msgid "Usa el formulario."
 msgstr "Use this form."
 
-#: renefernandezcom/templates/home.html:147
+#: renefernandezcom/templates/home.html:160
 msgid ""
 "Si quieres ponerte en contacto conmigo puedes utilizar el formulario de "
 "contacto de la izquierda o enviarme un email a"
@@ -141,22 +143,22 @@ msgstr ""
 "If you want to contact me you can use the contact form on the left or "
 "sending me an email to "
 
-#: renefernandezcom/templates/home.html:149
+#: renefernandezcom/templates/home.html:162
 msgid ""
 ". Si lo prefieres, también puedes hacerlo utilizando alguna de las redes "
 "sociales de más abajo."
 msgstr ""
 ". If you prefer, you can also do it using any of the social networks below."
 
-#: renefernandezcom/templates/home.html:160
+#: renefernandezcom/templates/home.html:173
 msgid "Enviar"
 msgstr "Send"
 
-#: renefernandezcom/templates/home.html:170
+#: renefernandezcom/templates/home.html:183
 msgid "Social."
 msgstr "Social."
 
-#: renefernandezcom/templates/home.html:171
+#: renefernandezcom/templates/home.html:185
 msgid ""
 "También puedes encontrarme en las redes sociales. Tengo una cuenta en casi "
 "todas las que existen, así que he tenido el detalle de poner a continuación "
