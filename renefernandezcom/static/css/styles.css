@@ -1,0 +1,211 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    margin: 0 auto;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-wrapper .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-container{
+    width: 80%;
+}
+
+/* CUSTOMIZE THE WHO I AM
+-------------------------------------------------- */
+
+.who-i-am{
+    margin: 0 auto;
+    width: 80%;
+    display:block;
+}
+
+.featured-social{
+    text-align:center;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 30px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.section-title{
+    margin-bottom: 20px;
+
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    /* Remove the edge padding needed for mobile */
+    .marketing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-left:  15px;
+        padding-right: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-left:  0;
+        padding-right: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /* Bump up size of carousel content */
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+
+}
+
+
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 0;
+    }
+
+    .contact-header{
+        margin-top: 120px;
+    }
+
+}
+
+
+.eii-mini{
+    background: url('../images/eii-logo-mini.png') no-repeat;
+    width: 24px;
+    height: 24px;
+    display:inline-block;
+}
+
+.pad-mini{
+    background: url('../images/pad-icon-mini.png') no-repeat;
+    width: 32px;
+    height: 24px;
+    display:inline-block;
+}
+
+.camera-mini{
+    background: url('../images/camera-icon-mini.png') no-repeat;
+    width: 33px;
+    height: 24px;
+    display:inline-block;
+}
+
+.code-mini{
+    background: url('../images/code-icon-mini.png') no-repeat;
+    width: 33px;
+    height: 24px;
+    display:inline-block;
+}
+
+.wp-mini{
+    background: url('../images/wp-icon-mini.png') no-repeat;
+    width: 24px;
+    height: 24px;
+    display:inline-block;
+}
+
+.sneaker-mini{
+    background: url('../images/sneaker-icon-mini.png') no-repeat;
+    width: 58px;
+    height: 24px;
+    display:inline-block;
+}
+
+form p, .form-success{
+    padding:10px;
+}
+
+form li{
+    padding: 10px;
+}
+
+.main-message{
+    padding: 15px;
+    text-align:center;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+}
+
+ul.messages{
+    list-style:none;
+}
+.hideme
+{
+    opacity:0;
+}
