@@ -77,19 +77,20 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-    <div itemscope itemtype="http://schema.org/Person">
 
-        <div class="container marketing">
+    <div class="container marketing">
 
-          <div class="row featurette who-i-am hideme">
-            <div class="col-md-7">
-              <h2 class="featurette-heading who-i-am-heading">¡Hola! <span class="text-muted">{% trans "Bienvenido a mi página web personal. " %}</span></h2>
-              <p class="lead">{% blocktrans %}Me llamo <span itemprop="name">René Fernández</span> y soy un <span itemprop="jobtitle">Ingeniero Técnico Informático</span> de <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressRegion">Asturias</span></span>. En esta página encontrarás información sobre mi actividad profesional y personal.{% endblocktrans %}</p>
-            </div>
-            <div class="col-md-5">
-              <img class="featurette-image img-responsive img-circle" src="{% static 'images/rene_fernandez_sanchez.jpg' %}" alt="Generic placeholder image" >
-            </div>
-          </div>
+        <div itemscope itemtype="http://schema.org/Person">
+
+              <div class="row featurette who-i-am hideme">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading who-i-am-heading">¡Hola! <span class="text-muted">{% trans "Bienvenido a mi página web personal. " %}</span></h2>
+                        <p class="lead">{% blocktrans %}Me llamo <span itemprop="name">René Fernández</span> y soy un <span itemprop="jobtitle">Ingeniero Técnico Informático</span> de <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressRegion">Asturias</span></span>. En esta página encontrarás información sobre mi actividad profesional y personal.{% endblocktrans %}</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-responsive img-circle" src="{% static 'images/rene_fernandez_sanchez.jpg' %}" alt="Generic placeholder image" >
+                    </div>
+              </div>
 
           <!--<hr class="featurette-divider">-->
 
@@ -142,10 +143,9 @@
           <div class="row featurette hideme" id="contact-form-section">
             <div class="col-md-7 pull-right contact-header">
               <h2 class="featurette-heading">{% blocktrans %}¿Quieres ponerte en contacto conmigo?{% endblocktrans %}<span class="text-muted">{% trans "Usa el formulario." %}</span></h2>
-              <p class="lead">{% blocktrans %}Si quieres ponerte en contacto conmigo puedes utilizar el formulario de contacto de la izquierda o enviarme un email a <script type="text/javascript"><!--
-              var ailhokz = ['a','r','e','o','a','d','c','r','a','a','<','f',' ','s','r','a','o','d','@','o','z','e','n','i','h','o','a','l','r','m','=','m','>','e','r','o','<','m','@','t','s','"','e','h',' ','a','"','e','l','l','>','m','e','n','a','h','l','c','z','n','e','e','"','=','c','e','l','a',':','i','f','"','.','n','n','n','e','f','/','.'];var wuwnoze = [78,4,47,74,57,31,40,21,49,10,0,6,39,44,59,67,55,69,58,36,71,26,68,11,54,17,29,51,27,37,45,9,79,22,65,14,76,75,20,13,43,38,24,3,2,42,52,70,56,18,53,48,60,28,19,16,12,73,33,23,5,64,8,7,35,32,41,1,15,50,25,46,34,66,61,30,62,63,77,72];var lllcxwb= new Array();for(var i=0;i<wuwnoze.length;i++){lllcxwb[wuwnoze[i]] = ailhokz[i]; }for(var i=0;i<lllcxwb.length;i++){document.write(lllcxwb[i]);}
-              // --></script>
-                  <noscript>Please enable Javascript to see the email address</noscript>. Si lo prefieres, también puedes hacerlo utilizando alguna de las redes sociales de más abajo.{% endblocktrans %}</p>
+              <p class="lead">{% blocktrans %}Si quieres ponerte en contacto conmigo puedes utilizar el formulario de contacto de la izquierda o enviarme un email a{% endblocktrans %}
+                  <a href="mailto:hola@renefernandez.com" class="email" itemprop="email">&#104;&#111;&#108;&#097;&#064;&#114;&#101;&#110;&#101;&#102;&#101;&#114;&#110;&#097;&#110;&#100;&#101;&#122;&#046;&#099;&#111;&#109;</a>
+                  {% blocktrans %}. Si lo prefieres, también puedes hacerlo utilizando alguna de las redes sociales de más abajo.{% endblocktrans %}</p>
             </div>
 
             <div class="col-md-5">
@@ -170,38 +170,39 @@
             <p class="lead">{% trans "También puedes encontrarme en las redes sociales. Tengo una cuenta en casi todas las que existen, así que he tenido el detalle de poner a continuación solamente aquellas que creo que te pueden interesar más." %}</p>
            </div>
 
-        <div class="row bs-featured-sites hideme">
+          <div class="row bs-featured-sites hideme">
 
-          <div class="col-sm-3">
-            <a href="https://plus.google.com/+ReneFernandezSanchez?rel=author" target="_blank" title="Google+">
-              <img class="featurette-image img-responsive" src="{% static 'images/google-plus-logo.png' %}" alt="Google+">
-            </a>
-          </div>
+              <div class="col-sm-3">
+                <a href="https://plus.google.com/+ReneFernandezSanchez?rel=author" target="_blank" title="Google+">
+                  <img class="featurette-image img-responsive" src="{% static 'images/google-plus-logo.png' %}" alt="Google+">
+                </a>
+              </div>
 
-          <div class="col-sm-3">
-            <a href="http://es.linkedin.com/pub/ren%C3%A9-fern%C3%A1ndez-s%C3%A1nchez/26/702/738/" target="_blank" title="Linkedin">
-              <img class="featurette-image img-responsive" src="{% static 'images/linkedin-logo.png' %}" alt="Linkedin">
-            </a>
-          </div>
+              <div class="col-sm-3">
+                <a href="http://es.linkedin.com/pub/ren%C3%A9-fern%C3%A1ndez-s%C3%A1nchez/26/702/738/" target="_blank" title="Linkedin">
+                  <img class="featurette-image img-responsive" src="{% static 'images/linkedin-logo.png' %}" alt="Linkedin">
+                </a>
+              </div>
 
-          <div class="col-sm-3">
-            <a href="https://github.com/renefs87" target="_blank" title="Github">
-              <img class="featurette-image img-responsive" src="{% static 'images/github-logo.png' %}" alt="Github">
-            </a>
-          </div>
+              <div class="col-sm-3">
+                <a href="https://github.com/renefs87" target="_blank" title="Github">
+                  <img class="featurette-image img-responsive" src="{% static 'images/github-logo.png' %}" alt="Github">
+                </a>
+              </div>
 
-          <div class="col-sm-3">
-            <a href="https://twitter.com/the_rocker" target="_blank" title="Twitter">
-              <img class="featurette-image img-responsive" src="{% static 'images/twitter-logo.png' %}" alt="Twitter">
-            </a>
-          </div>
+              <div class="col-sm-3">
+                <a href="https://twitter.com/the_rocker" target="_blank" title="Twitter">
+                  <img class="featurette-image img-responsive" src="{% static 'images/twitter-logo.png' %}" alt="Twitter">
+                </a>
+              </div>
+
+            </div>
 
         </div>
 
-      </div>
-
-
       <hr class="featurette-divider">
+
+     </div>
 {% endblock %}
 
 {% block footer %}
