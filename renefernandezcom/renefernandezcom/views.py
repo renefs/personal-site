@@ -36,3 +36,8 @@ def contact(request):
     else:
         form = ContactForm()
     return form
+
+
+def curriculum(request):
+
+    return render(request, 'curriculum.html')
