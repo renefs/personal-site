@@ -5,5 +5,5 @@ local_settings.py
 /renefernandezcom/renefernandezcom/settings.py
 /renefernandezcom/renefernandezcom/settings_debug.py
 /renefernandezcom/renefernandezcom/settings_production.py
-.idea/*
+.idea
 personal-site.iml
