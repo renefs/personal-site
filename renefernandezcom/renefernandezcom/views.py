@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'rene'
+import sys
+
 from renefernandezcom.settings import DEFAULT_FROM_EMAIL
 from django.shortcuts import render
 
@@ -27,7 +29,8 @@ def contact(request):
 
             msg = EmailMessage('[Página personal] Formulario de contacto', html_content, DEFAULT_FROM_EMAIL,[DEFAULT_FROM_EMAIL])
             msg.content_subtype = "html"  # Main content is now text/html
-            msg.send()
+            if 'test' not in sys.argv:
+                msg.send()
 
             new_form = ContactForm()
             messages.add_message(request, messages.SUCCESS,  _(u'El mensaje ha sido enviado correctamente. ¡Gracias!'))
