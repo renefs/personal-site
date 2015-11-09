@@ -27,7 +27,7 @@ def contact(request):
 
             msg = EmailMessage('[Página personal] Formulario de contacto', html_content, DEFAULT_FROM_EMAIL,[DEFAULT_FROM_EMAIL])
             msg.content_subtype = "html"  # Main content is now text/html
-            #msg.send()
+            msg.send()
 
             new_form = ContactForm()
             messages.add_message(request, messages.SUCCESS,  _(u'El mensaje ha sido enviado correctamente. ¡Gracias!'))
