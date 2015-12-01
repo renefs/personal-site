@@ -20,8 +20,8 @@ def contact(request):
         if form.is_valid():
             cd = form.cleaned_data
 
-            html_content = '<p>Nombre: <strong>' + cd[
-                'name'] + '</strong><p><strong>Email del remitente:</strong></p><p>' + \
+            html_content = '<p>Nombre: <strong>' + cd['name'] \
+                           + '</strong><p><strong>Email del remitente:</strong></p><p>' + \
                            cd['email'] + '</p><p><strong>Cuerpo:</strong></p>' + cd['message'] + '</p>'
 
             msg = EmailMessage('[Página personal] Formulario de contacto', html_content, DEFAULT_FROM_EMAIL,
