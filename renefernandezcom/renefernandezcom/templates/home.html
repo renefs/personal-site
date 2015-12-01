@@ -76,8 +76,7 @@
             <ul class="messages">
                 {% for message in messages %}
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <li class="main-message alert alert-
-                            {% if message.tags == 'success' %}{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    <li class="main-message alert alert-{% if message.tags == 'success' %}{{ message.tags }}"{% endif %}>{{ message }}</li>
                 {% endfor %}
             </ul>
         {% endif %}
@@ -92,7 +91,7 @@
                 <h2 class="featurette-heading who-i-am-heading">¡Hola! <span
                         class="text-muted">{% trans "Bienvenido a mi página web personal. " %}</span></h2>
 
-                <p class="lead">{% blocktrans %}Me llamo <span itemprop="name">René Fernández</span> y soy un <span itemprop="jobtitle">Ingeniero Técnico Informático</span> de <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressRegion">Asturias</span></span>. En esta página encontrarás información sobre mi actividad profesional y personal.{% endblocktrans %}</p>
+                <p class="lead">{% blocktrans %}Me llamo <span itemprop="name">René Fernández</span> y soy un <span itemprop="jobtitle">Ingeniero Web</span> de <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressRegion">Asturias</span></span>. En esta página encontrarás información sobre mi actividad profesional y personal.{% endblocktrans %}</p>
             </div>
             <div class="col-xs-6 col-sm-5">
                 <img class="featurette-image img-responsive img-circle"
@@ -101,35 +100,9 @@
         </div>
 
         {% comment %}
-        <hr class="featurette-divider">
+            <hr class="featurette-divider">
 
-          <!-- Three columns of text below the carousel -->
-         <!-- <div class="row">
-            <div class="featured-social">
-                <h2 class="bs-featurette-title">Latest projects.</h2>
-                <p class="lead">Estos son algunos de los últimos proyectos en los que he trabajado. Puedes ver más proyectos en la <a href="">sección de proyectos</a>.</p>
-               </div>
-            <div class="col-lg-4">
-              <img class="img-rounded" data-src="{% static 'js/holder.js' %}/140x140" alt="Generic placeholder image">
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>--><!-- /.col-lg-4 -->
-            <!--<div class="col-lg-4">
-              <img class="img-rounded" data-src="{% static 'js/holder.js' %}/140x140" alt="Generic placeholder image">
-              <h2>Heading</h2>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>-->
-            <!--<div class="col-lg-4">
-              <img class="img-rounded" data-src="{% static 'js/holder.js' %}/140x140" alt="Generic placeholder image">
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-          </div>
-
-          {% endcomment %}
+        {% endcomment %}
 
         <hr class="featurette-divider hidden-xs">
 
@@ -138,7 +111,7 @@
                 <h2 class="featurette-heading">{% trans "¿A qué me dedico?" %}<span
                         class="text-muted">{% trans "En corto." %}</span></h2>
 
-                <p class="lead">{% blocktrans %}Actualmente estoy estudiando el Máster de Ingeniería Web de la <span itemprop="alumniOf">Universidad de Oviedo</span> <span class="eii-mini hidden-xs"></span>.{% endblocktrans %}</p>
+                <p class="lead">{% blocktrans %}Actualmente estoy trabajando como <span itemprop="jobTitle">Ingeniero Web</span> en el <span itemprop="worksFor"><a href="https://home.web.cern.ch/" title="European Organization for Nuclear Research">CERN</a></span> <span class="cern-mini hidden-xs"></span>.{% endblocktrans %}</p>
 
                 <p class="lead">{% blocktrans %}En mi tiempo libre suelo salir a hacer fotos <span class="camera-mini hidden-xs"></span>, aunque también me gusta programar <span class="code-mini hidden-xs"></span>, jugar a la consola <span class="pad-mini hidden-xs"></span>, escribir en mi blog <span class="wp-mini hidden-xs"></span> y salir a caminar <span class="sneaker-mini hidden-xs"></span> cuando el tiempo acompaña.{% endblocktrans %}</p>
 

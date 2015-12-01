@@ -158,6 +158,13 @@ body {
     display:inline-block;
 }
 
+.cern-mini{
+    background: url('../images/cern-logo-mini.png') no-repeat;
+    width: 24px;
+    height: 24px;
+    display:inline-block;
+}
+
 .pad-mini{
     background: url('../images/pad-icon-mini.png') no-repeat;
     width: 32px;
