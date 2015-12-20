@@ -4,13 +4,9 @@ python:
 
 services: postgresql
 
-#before_install:
-#  - export DJANGO_SETTINGS_MODULE="$TRAVIS_BUILD_DIR/renefernandezcom/renefernandezcom/ci_settings.py"
-# command to install dependencies
 install:
   - pip install -r ./renefernandezcom/pip-requirements.txt
   - psql -c "CREATE DATABASE personal_site;" -U postgres
-#  - echo $DJANGO_SETTINGS_MODULE
 
 before_script:
   - mv ./renefernandezcom/renefernandezcom/ci_settings.py.sample ./renefernandezcom/renefernandezcom/settings.py
