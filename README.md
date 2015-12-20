@@ -3,6 +3,8 @@ personal-site
 
 Personal site written in Python and Django.
 
+[![Build Status](https://travis-ci.org/renefs87/personal-site.svg?branch=master)](https://travis-ci.org/renefs87/personal-site)
+
 ## Installation
 
 Python requirements:
