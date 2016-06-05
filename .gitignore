@@ -7,4 +7,4 @@ settings.py
 /renefernandezcom/renefernandezcom/settings_production.py
 .idea
 personal-site.iml
-static/bower_components/
+renefernandezcom/static/bower_components/

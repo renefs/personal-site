@@ -1,8 +1,16 @@
-<div class="row bs-featured-sites hideme">
-    <div class="col-sm-3" ng-repeat="social_network in $ctrl.social_networks">
-        <a href="{{ social_network.link }}" target="_blank" title="{{ social_network.name }}">
-            <img class="featurette-image img-responsive" src="{{ social_network.image }}"
-                 alt="{{ social_network.name }}">
-        </a>
+<div class="container">
+    <div class="featured-social hideme">
+        <h2 class="bs-featurette-title">{{ 'SOCIAL_TITLE' | translate }}</h2>
+
+        <p class="lead">{{ 'SOCIAL_LEAD' | translate }}</p>
+
+        <div class="row bs-featured-sites hideme">
+            <div class="col-sm-3" ng-repeat="social_network in $ctrl.social_networks">
+                <a href="{{ social_network.link }}" target="_blank" title="{{ social_network.name }}">
+                    <img class="featurette-image img-responsive" src="{{ social_network.image }}"
+                         alt="{{ social_network.name }}">
+                </a>
+            </div>
+        </div>
     </div>
 </div>

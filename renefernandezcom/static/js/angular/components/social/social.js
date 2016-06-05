@@ -4,7 +4,6 @@ angular.module('personalApp.social', [
 ]).component('socialNetworks', {
     templateUrl: 'static/js/angular/components/social/social.html',
     controller: function SocialNetworksController() {
-        this.description = "También puedes encontrarme en las redes sociales. Tengo una cuenta en casi todas las que existen, así que he tenido el detalle de poner a continuación solamente aquellas que creo que te pueden interesar más.",
         this.social_networks = [
             {
                 name: 'Google+',
