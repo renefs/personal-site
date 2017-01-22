@@ -1,4 +1,4 @@
-Django==1.8.1
+Django==1.10.5
 django-simple-captcha
 gunicorn==19.3.0
 psycopg2==2.6
