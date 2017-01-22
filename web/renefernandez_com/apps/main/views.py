@@ -2,7 +2,6 @@ import sys
 from django.shortcuts import render, redirect
 
 from renefernandez_com.apps.main.forms import ContactForm
-from .models import Item
 from django.utils.translation import ugettext as _
 from django.core.mail import EmailMessage
 from django.contrib import messages
@@ -18,7 +17,9 @@ def home(request):
 def process_contact_form(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
+        print(request.POST)
         if form.is_valid():
+            print("Form is valid")
             cd = form.cleaned_data
 
             html_content = '<p>Nombre: <strong>' + cd['name'] \
@@ -35,6 +36,8 @@ def process_contact_form(request):
             messages.add_message(request, messages.SUCCESS, _(u'El mensaje ha sido enviado correctamente. ¡Gracias!'))
 
             return new_form
+        else:
+            print("Form is invalid")
     else:
         form = ContactForm()
     return form

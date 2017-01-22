@@ -107,7 +107,7 @@
                                       placeholder="{% trans "form_message_placeholder" %}"
                                       title="{% trans "form_message_title" %}" required="required" rows="3"></textarea>
 
-                            <div class="col-xs-12">
+                            <div class="field-captcha">
                                 {{ form.captcha }}
                                 {% if form.message.errors %}
                                     <ul class="bg-danger">
