@@ -1,0 +1,133 @@
+{% extends "_base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+{% block content %}
+
+    <div id="header-big-imgs" data-num-img=5
+         data-img-src-1="{% static "img/somiedo.jpg" %}"
+         data-img-desc-1="{% trans "somiedo" %}"
+         data-img-src-2="{% static "img/luarca.jpg" %}"
+         data-img-desc-2="{% trans "luarca" %}"
+         data-img-src-3="{% static "img/ginebra.jpg" %}"
+         data-img-desc-3="{% trans "ginebra" %}"
+         data-img-src-4="{% static "img/aviles.jpg" %}"
+         data-img-desc-4="{% trans "aviles" %}"
+         data-img-src-5="{% static "img/londres.jpg" %}"
+         data-img-desc-5="{% trans "london" %}"
+    ></div>
+
+
+    <header class="header-section has-img">
+
+        <div class="big-img intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="page-heading">
+                            <h1>{% trans "hello_title" %}</h1>
+                            <hr class="small">
+                            <span class="page-subheading">{% trans "hello_subtitle" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class='img-desc'></span>
+        </div>
+
+        <div class="container" role="main">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div id="aboutme">
+
+                        <p class="about-text">
+                            <span class="fa fa-briefcase about-icon"></span>
+                            {% trans "block_work" %}
+                        </p>
+
+                        <p class="about-text">
+                            <span class="fa fa-graduation-cap about-icon"></span>
+                            {% trans "block_studies" %}
+                        </p>
+
+                        <p class="about-text">
+                            <span class="fa fa-code about-icon"></span>
+                            {% trans "block_code" %}
+                        </p>
+
+                        <p class="about-text">
+                            <span class="fa fa-heart about-icon"></span>
+                            {% trans "block_hobbies" %}
+                        </p>
+
+                        <p class="about-text">
+                            <span class="fa fa-file-text-o about-icon"></span>
+                            {% trans "block_projects" %}
+                        </p>
+
+                        <p class="about-text">
+                            <span class="fa fa-globe about-icon"></span>
+                            {% trans "block_about" %}
+                        </p>
+
+                    </div>
+
+                    <div id="contactme-section" id="contactme">
+                        <h1 id="contact">{% trans "Contact" %}</h1>
+
+
+                        <p>{% trans "contact_block" %}</p>
+
+                        <form action="." method="POST" class="form"
+                              id="contact-form">
+                            {% csrf_token %}
+                            <p>{% trans "contact_form_block" %}</p>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    {{ form.email }}
+                                    {% if form.email.errors %}
+                                        <ul class="bg-danger">
+                                            {% for error in form.email.errors %}
+                                                <li>{{ error|escape }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                </div>
+                                <div class="col-xs-6">
+                                    {{ form.name }}
+                                    {% if form.name.errors %}
+                                        <ul class="bg-danger">
+                                            {% for error in form.name.errors %}
+                                                <li>{{ error|escape }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <textarea type="text" name="content" class="form-control input-lg"
+                                      placeholder="{% trans "form_message_placeholder" %}"
+                                      title="{% trans "form_message_title" %}" required="required" rows="3"></textarea>
+
+                            <div class="col-xs-12">
+                                {{ form.captcha }}
+                                {% if form.message.errors %}
+                                    <ul class="bg-danger">
+                                        {% for error in form.message.errors %}
+                                            <li>{{ error|escape }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </div>
+
+                            <button data-sitekey="6LeIoREUAAAAAAyZ4anWBpuomk8sRTb4ybLPxJiT" data-callback='onSubmit'
+                                    class="btn btn-lg btn-primary g-recaptcha">{% trans "submit" %}
+                            </button>
+                        </form>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+{% endblock content %}

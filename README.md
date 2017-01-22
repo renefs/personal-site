@@ -1,51 +1,22 @@
-personal-site
-=============
+## Django Development With Docker Compose and Machine
 
-Personal site written in Python and Django.
+Featuring:
 
-[![Build Status](https://travis-ci.org/renefs87/personal-site.svg?branch=master)](https://travis-ci.org/renefs87/personal-site)
+- Docker v1.10.3
+- Docker Compose v1.6.2
+- Docker Machine v0.6.0
+- Python 3.5
 
-## Installation
+Blog post -> https://realpython.com/blog/python/django-development-with-docker-compose-and-machine/
 
-Python requirements:
+### OS X Instructions
 
-``` shell
-pip install -r pip-requirements.txt
-```
+1. Start new machine - `docker-machine create -d virtualbox dev;`
+1. Build images - `docker-compose build`
+1. Start services - `docker-compose up -d`
+1. Create migrations - `docker-compose run web /usr/local/bin/python manage.py migrate`
+1. Grab IP - `docker-machine ip dev` - and view in your browser
 
-Dropping and creating the PostgreSQL DB:
-``` psql
-DROP database <DATABASENAME>;
-
-CREATE database <DATABASENAME>;
-```
-
-## Development
-
-To create the DB tables:
-``` shell
-python manage.py migrate
-```
-
-To run the development server:
-``` shell
-python manage.py runserver
-```
-
-## Translations
-
-From the project root:
-```
-django-admin.py makemessages -a
-django-admin.py compilemessages
-```
-
-On Mac, we need gettext installed and linked:
-```
-brew install gettext
-brew link gettext
-```
-
-
-
-
+python manage.py makemessages -l <LANGUAGE_CODE>
+python manage.py makemessages -a
+python manage.py compilemessages

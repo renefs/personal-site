@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-22 10:38+0000\n"
+"PO-Revision-Date: 2017-01-22 11:50+0100\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.11\n"
+
+#: renefernandez_com/apps/main/templates/_base.html:10
+msgid "René Fernández Sánchez personal website | Home"
+msgstr "René Fernández Sánchez página personal | Inicio"
+
+#: renefernandez_com/apps/main/templates/_base.html:35
+msgid "Toggle navigation"
+msgstr "Cambiar Navegación"
+
+#: renefernandez_com/apps/main/templates/_base.html:40
+msgid "René Fernández Sánchez"
+msgstr "René Fernández Sánchez"
+
+#: renefernandez_com/apps/main/templates/_base.html:46
+msgid "About me"
+msgstr "Acerca de"
+
+#: renefernandez_com/apps/main/templates/_base.html:49
+msgid "Contact me"
+msgstr "Contacto"
+
+#: renefernandez_com/apps/main/templates/_base.html:115
+msgid "Theme by"
+msgstr "Plantilla por"
+
+#: renefernandez_com/apps/main/templates/_base.html:119
+msgid "Cambia el idioma:"
+msgstr "Change Language:"
+
+#: renefernandez_com/apps/main/templates/home.html:8
+msgid "somiedo"
+msgstr "Somiedo, Asturias"
+
+#: renefernandez_com/apps/main/templates/home.html:10
+msgid "luarca"
+msgstr "Luarca, Asturias"
+
+#: renefernandez_com/apps/main/templates/home.html:12
+msgid "ginebra"
+msgstr "Ginebra, Suiza"
+
+#: renefernandez_com/apps/main/templates/home.html:14
+msgid "aviles"
+msgstr "Avilés, Asturias"
+
+#: renefernandez_com/apps/main/templates/home.html:16
+msgid "london"
+msgstr "Londres, Reino Unido"
+
+#: renefernandez_com/apps/main/templates/home.html:27
+msgid "hello_title"
+msgstr "Hola!, Soy René"
+
+#: renefernandez_com/apps/main/templates/home.html:29
+msgid "hello_subtitle"
+msgstr "Bienvenido a mi página personal"
+
+#: renefernandez_com/apps/main/templates/home.html:44
+msgid "block_work"
+msgstr "Actualmente trabajo como <strong><span itemprop=\"jobtitle\">Ingeniero Web</span></strong> en el <a href=\"https://home.cern\" title=\"European Organization for Nuclear Research\">CERN</a> (Suiza). Anteriormente he trabajado como <strong>desarrollador web freelance</strong>, construyendo proyectos para diversos clientes y también en una startup <a href=\"http://adamaweb.com\">Adama Web</a>."
+
+#: renefernandez_com/apps/main/templates/home.html:49
+msgid "block_studies"
+msgstr "He obtenido mi <strong>Master en Ingeniería Web</strong> y mi <strong>Ingeniería Técnica Informática</strong> en la Universidad de Oviedo. Mi Proyecto de Fin de Master fue \"<a href=\"https://goo.gl/bcvkrw\" title=\"Codesnug: herramienta social de almacenamiento de código\">Codesnug: herramienta social de almacenamiento de código</a>\", con el que obtuve una Matrícula de Honor."
+
+#: renefernandez_com/apps/main/templates/home.html:54
+msgid "block_code"
+msgstr "Me gusta programar y gestionar todo el ciclo de vida de aplicaciones, materializando mis ideas en aplicaciones completamente funcionales. <strong>¡Me encanta crear cosas útiles y molonas!</strong>."
+
+#: renefernandez_com/apps/main/templates/home.html:59
+msgid "block_hobbies"
+msgstr "Me gusta el senderismo, la fotografías, los viajes de fin de semana, jugar a videojuegos y escribir en mi blog."
+
+#: renefernandez_com/apps/main/templates/home.html:64
+msgid "block_projects"
+msgstr "Puedes echar un vista a algunos de mis proyectos anteriores en la página de proyectos (Realmente solo aquellos de los que estoy más orgulloso :))."
+
+#: renefernandez_com/apps/main/templates/home.html:69
+msgid "block_about"
+msgstr "Crecí en Asturias, España. Siempre he sido un <strong>entusiasta de la tecnología</strong>, así que decidí estudiar informática. Después de finalizar mis estudios me mudé a Ginebra, Suiza, para continuar mi carrera profesional en IT."
+
+#: renefernandez_com/apps/main/templates/home.html:75
+msgid "Contact"
+msgstr "Contacto"
+
+#: renefernandez_com/apps/main/templates/home.html:78
+msgid "contact_block"
+msgstr "Si quieres ponerte en contacto conmigo puedes <a href=\"mailto:hola@renefernandez.com?subject=Hello from renefernandez.com\">enviarme un email</a> o encontrarme <a href=\"https://twitter.com/the_rocker\">en Twitter</a>. ¡No dudes en mandarme un mensaje, siempre estoy abierto a nuevas y emocionantes oportunidades!"
+
+#: renefernandez_com/apps/main/templates/home.html:82
+msgid "contact_form_block"
+msgstr "También puedes mandarme un mensaje rápido utilizando el formulario de abajo."
+
+#: renefernandez_com/apps/main/templates/home.html:89
+msgid "form_name_placeholder"
+msgstr "Tu nombre"
+
+#: renefernandez_com/apps/main/templates/home.html:90
+msgid "form_name_title"
+msgstr "Nombre"
+
+#: renefernandez_com/apps/main/templates/home.html:94
+msgid "form_message_placeholder"
+msgstr "Mensaje…"
+
+#: renefernandez_com/apps/main/templates/home.html:95
+msgid "form_message_title"
+msgstr "Mensaje"
+
+#: renefernandez_com/apps/main/templates/home.html:100
+msgid "submit"
+msgstr "Enviar"
+
+#: renefernandez_com/settings.py:113
+msgid "Español"
+msgstr "Español"
+
+#: renefernandez_com/settings.py:114
+msgid "English"
+msgstr "English"

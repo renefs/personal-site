@@ -8,3 +8,4 @@ settings.py
 .idea
 personal-site.iml
 renefernandezcom/static/bower_components/
+.env
