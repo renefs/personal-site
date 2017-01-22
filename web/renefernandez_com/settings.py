@@ -127,7 +127,7 @@ LOCALE_PATHS = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = 'http://127.0.0.1:8001/static/'
+STATIC_URL = os.environ['STATIC_URL']
 # STATICFILES_DIRS = (
 #     os.path.join(BASE_DIR, 'static'),
 # )
