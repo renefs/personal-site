@@ -12,7 +12,7 @@ install:
 before_script:
   - cp requirements.txt ./web
   - cd web
-  - mv ./renefernandez_com/config.sample.py ./codeproject/config.py
+  - mv ./renefernandez_com/config.sample.py ./renefernandez_com/config.py
   - python manage.py makemigrations
   - python manage.py migrate
 script:
