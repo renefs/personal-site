@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/renefs/personal-site.svg?branch=master)](https://travis-ci.org/renefs/personal-site)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/656018ee193b8014f31a/maintainability)](https://codeclimate.com/github/renefs/personal-site/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/656018ee193b8014f31a/test_coverage)](https://codeclimate.com/github/renefs/personal-site/test_coverage)
+
 Featuring:
 
 - Docker v1.10.3
@@ -19,6 +23,6 @@ Blog post -> https://realpython.com/blog/python/django-development-with-docker-c
 1. Create migrations - `docker-compose run web /usr/local/bin/python manage.py migrate`
 1. Grab IP - `docker-machine ip dev` - and view in your browser
 
-python manage.py makemessages -l <LANGUAGE_CODE>
-python manage.py makemessages -a
-python manage.py compilemessages
+    python manage.py makemessages -l <LANGUAGE_CODE>
+    python manage.py makemessages -a
+    python manage.py compilemessages
