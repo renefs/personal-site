@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 from django.shortcuts import render, redirect
 
@@ -26,7 +27,7 @@ def process_contact_form(request):
                            + '</strong><p><strong>Email del remitente:</strong></p><p>' + \
                            cd['email'] + '</p><p><strong>Cuerpo:</strong></p>' + cd['message'] + '</p>'
 
-            msg = EmailMessage('[Pagina personal] Formulario de contacto', html_content, DEFAULT_FROM_EMAIL,
+            msg = EmailMessage('[Página personal] Formulario de contacto', html_content, DEFAULT_FROM_EMAIL,
                                [DEFAULT_FROM_EMAIL])
             msg.content_subtype = "html"  # Main content is now text/html
             if 'test' not in sys.argv:
