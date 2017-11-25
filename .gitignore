@@ -8,3 +8,5 @@ local_settings.py
 personal-site.iml
 renefernandezcom/static/bower_components/
 .env
+config.py
+venv

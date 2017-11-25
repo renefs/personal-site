@@ -1,17 +1,24 @@
 language: python
 python:
-  - "2.7"
+  - "2.7.10"
 
 services: postgresql
 
 install:
-  - pip install -r ./renefernandezcom/pip-requirements.txt
+  - pip install -r requirements.txt
+  - pip install coverage==4.3
   - psql -c "CREATE DATABASE personal_site;" -U postgres
 
 before_script:
-  - mv ./renefernandezcom/renefernandezcom/ci_settings.py.sample ./renefernandezcom/renefernandezcom/settings.py
-  - cd renefernandezcom
+  - cp requirements.txt ./web
+  - cd web
+  - mv ./renefernandez_com/config.sample.py ./codeproject/config.py
+  - python manage.py makemigrations
   - python manage.py migrate
+script:
+- coverage run --source='.' manage.py test
 
 script:
   - python manage.py test
+
+
