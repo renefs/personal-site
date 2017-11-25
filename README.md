@@ -1,4 +1,6 @@
-## Django Development With Docker Compose and Machine
+## renefernandez.com personal website
+
+[![Build Status](https://travis-ci.org/renefs/personal-site.svg?branch=master)](https://travis-ci.org/renefs/personal-site)
 
 Featuring:
 
