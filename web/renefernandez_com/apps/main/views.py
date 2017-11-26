@@ -6,7 +6,7 @@ from renefernandez_com.apps.main.forms import ContactForm
 from django.utils.translation import ugettext as _
 from django.core.mail import EmailMessage
 from django.contrib import messages
-from renefernandez_com.settings import DEFAULT_FROM_EMAIL
+from renefernandez_com.settings import DEFAULT_FROM_EMAIL, DEFAULT_TO_EMAIL
 
 
 def home(request):
@@ -28,7 +28,7 @@ def process_contact_form(request):
                            cd['email'] + '</p><p><strong>Cuerpo:</strong></p>' + cd['message'] + '</p>'
 
             msg = EmailMessage('[Página personal] Formulario de contacto', html_content, DEFAULT_FROM_EMAIL,
-                               [DEFAULT_FROM_EMAIL])
+                               [DEFAULT_TO_EMAIL])
             msg.content_subtype = "html"  # Main content is now text/html
             if 'test' not in sys.argv:
                 msg.send()
