@@ -1,4 +1,0 @@
-Django==1.10.5
-django-recaptcha
-gunicorn==19.3.0
-psycopg2==2.6
