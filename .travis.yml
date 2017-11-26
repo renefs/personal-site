@@ -3,11 +3,10 @@ python:
 - 2.7.10
 services: postgresql
 install:
-- pip install -r requirements.txt
+- pip install -r web/requirements.txt
 - pip install coverage==4.3
 - psql -c "CREATE DATABASE personal_site;" -U postgres
 before_script:
-- cp requirements.txt ./web
 - cd web
 - mv ./renefernandez_com/config.sample.py ./renefernandez_com/config.py
 - python manage.py makemigrations
