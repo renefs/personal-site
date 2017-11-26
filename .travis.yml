@@ -3,12 +3,20 @@ python:
 - 2.7.10
 services: postgresql
 install:
-- pip install -r requirements.txt
+- pip install -r web/requirements.txt
 - pip install coverage==4.3
 - psql -c "CREATE DATABASE personal_site;" -U postgres
 before_script:
-- cp requirements.txt ./web
 - cd web
+#
+# Code climate configuration
+#
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+- chmod +x ./cc-test-reporter
+- ./cc-test-reporter before-build
+#
+# Application
+#
 - mv ./renefernandez_com/config.sample.py ./renefernandez_com/config.py
 - python manage.py makemigrations
 - python manage.py migrate
@@ -16,10 +24,11 @@ script:
 - coverage run --source='.' manage.py test
 after_success:
 - coverage report
-- codeclimate-test-reporter
+- coverage xml
+- ls -la
+- ./cc-test-reporter after-build -t coverage.py --exit-code $TRAVIS_TEST_RESULT
 - cd ..
 - tar -czf package.tgz web
-- ls -la
 - export SSHPASS=$DEPLOY_PASS
 - sshpass -V
 - sshpass -e scp -o StrictHostKeyChecking=no package.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH

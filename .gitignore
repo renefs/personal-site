@@ -10,3 +10,5 @@ renefernandezcom/static/bower_components/
 .env
 config.py
 venv
+coverage.xml
+.coverage
