@@ -28,7 +28,7 @@ after_success:
 - coverage xml
 - ./cc-test-reporter after-build -t coverage.py --exit-code $TRAVIS_TEST_RESULT
 - cd ..
-- tar -czf package.tgz web/*
+- tar -czf package.tgz web
 - export SSHPASS=$DEPLOY_PASS
 - sshpass -V
 - sshpass -e scp -o StrictHostKeyChecking=no package.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
