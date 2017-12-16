@@ -76,7 +76,7 @@ msgstr "Bienvenido a mi página personal"
 
 #: renefernandez_com/apps/main/templates/home.html:44
 msgid "block_work"
-msgstr "Actualmente trabajo como <strong><span itemprop=\"jobtitle\">Ingeniero Web</span></strong> en el <a href=\"https://home.cern\" title=\"European Organization for Nuclear Research\">CERN</a> (Suiza). Anteriormente he trabajado como <strong>desarrollador web freelance</strong>, construyendo proyectos para diversos clientes y también en una startup <a href=\"http://adamaweb.com\">Adama Web</a>."
+msgstr "Actualmente trabajo como <strong><span itemprop=\"jobtitle\">Ingeniero Web</span></strong> en el <a href=\"https://home.cern\" title=\"European Organization for Nuclear Research\">CERN</a> (Suiza). Anteriormente he trabajado como <strong>desarrollador web freelance</strong>, construyendo proyectos para diversos clientes y también en una startup, Adama Web."
 
 #: renefernandez_com/apps/main/templates/home.html:49
 msgid "block_studies"

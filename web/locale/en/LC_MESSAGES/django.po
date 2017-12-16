@@ -81,8 +81,7 @@ msgstr ""
 "                            (Switzerland). Previously I worked as a "
 "<strong>freelance web developer</strong>, building\n"
 "                            amazing projects for several companies and also "
-"on a startup (<a href=\"http://adamaweb.com\">Adama\n"
-"                            Web</a>)."
+"on a startup, Adama Web</a>)."
 
 #: renefernandez_com/apps/main/templates/home.html:49
 msgid "block_studies"
