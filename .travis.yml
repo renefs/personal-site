@@ -7,7 +7,6 @@ install:
 - pip install coverage==4.3
 - psql -c "CREATE DATABASE personal_site;" -U postgres
 before_script:
-- cp requirements.txt ./web
 - cd web
 #
 # Code climate configuration
