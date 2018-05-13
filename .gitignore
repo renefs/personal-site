@@ -12,3 +12,4 @@ config.py
 venv
 coverage.xml
 .coverage
+db.sqlite3
