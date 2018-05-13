@@ -116,7 +116,7 @@ USE_L10N = True
 USE_TZ = True
 
 LANGUAGES = [
-    ('es', _('Español')),
+    ('es', _('EspaÃ±ol')),
     ('en', _('English')),
 ]
 
@@ -128,11 +128,11 @@ LOCALE_PATHS = (
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = config.STATIC_URL
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'static'),
-# )
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 # print(STATICFILES_DIRS)
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 RECAPTCHA_PUBLIC_KEY = config.RECAPTCHA_PUBLIC_KEY
 RECAPTCHA_PRIVATE_KEY = config.RECAPTCHA_PRIVATE_KEY
